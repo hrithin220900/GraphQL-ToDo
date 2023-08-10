@@ -5,6 +5,7 @@ const {
     GraphQLID,
     GraphQLString,
     GraphQLBoolean,
+    GraphQlDate,
     GraphQLSchema,
     GraphQLList,
     GraphQLNonNull,
@@ -29,7 +30,7 @@ const TodoType = new GraphQLObjectType({
         title: { type: GraphQLString },
         description: { type: GraphQLString },
         completed: { type: GraphQLBoolean },
-        createdAt: { type: GraphQLString },
-        updatedAt: { type: GraphQLString }
+        createdAt: { type: GraphQlDate },
+        updatedAt: { type: GraphQlDate }
     })
 })
